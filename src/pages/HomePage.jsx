@@ -16,7 +16,7 @@ export const HomePage = () => {
                 eros. 
             </p>
             <br />
-            <Link to="/random-beers" >
+            <Link to="/random" >
                 <img src={RandomBeerImage} alt="random-beer" style={{width: "100vh"}}/>
                 <h3>Random Beer</h3>
             </Link>
@@ -26,7 +26,7 @@ export const HomePage = () => {
                 eros.
             </p>
             <br />
-            <Link to="/new-beer" >
+            <Link to="/new" >
                 <img src={NewBeerImage} alt="new-beer" style={{width: "100vh"}}/>
                 <h3>New Beer</h3>
             </Link>
