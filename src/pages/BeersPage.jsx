@@ -4,10 +4,10 @@ import { Link } from 'react-router-dom'
 
 export const BeersPage = () => {
     const [beers, setBeers] = useState([]);
-    const API_URL = process.env.REACT_APP_BASE_URL;
+    const API_URL = "https://ih-beers-api2.herokuapp.com";
   
     useEffect(() => {
-        axios.get(`https://ih-beers-api2.herokuapp.com/beers`)
+        axios.get(`${API_URL}/beers`)
             .then(response => 
                 // console.log(response.data)
                 setBeers(response.data))
